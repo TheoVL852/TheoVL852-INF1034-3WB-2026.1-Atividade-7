@@ -40,10 +40,10 @@ if funcao == 'computador':
     while num!=numero_adivinha:
         if num>numero_adivinha:
             tentativa+=1
-            maior_menor==-1
+            maior_menor=-1
         elif num<numero_adivinha:
             tentativa+=1
-            maior_menor==1
+            maior_menor=1
 
     
         if maior_menor==-1:
