@@ -46,7 +46,7 @@ if funcao == 'computador':
             maior_menor=1
 
     
-        if maior_menor==-1:
+        if maior_menor==-1:   # Mudar o valor do menor numero e do maior numero para que o intervalo do randint nao seja muito grande
             num_maior=num
             num=random.randint(num_menor,num_maior)  
         elif maior_menor==1:
