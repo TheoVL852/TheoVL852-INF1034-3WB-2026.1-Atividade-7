@@ -1,15 +1,15 @@
 
 
-num1 = (input('--> '))
+num1 = input('--> ')
 op = input('--> ')
-num2 = (input('--> '))
+num2 = input('--> ')
 resultado = 0
 
 if num1.isdigit() == True:
     num1=int(num1)
 if num2.isdigit() == True:
     num2=int(num2)
-
+    
 if op == 'x':
     resultado = num1*num2
     print(f'= {resultado}')
@@ -25,4 +25,24 @@ elif op == '/':
 else:
     print('Insira um operador válido')
 
+
+continuar = input('---> ')
+if continuar in 'x+/-':
+    num3=int(input('---> '))
+    if continuar == 'x':
+        resultado = resultado*num3
+        print(f'= {resultado}')3
+    elif continuar == '/':
+        resultado = resultado/num3
+        print(f'= {resultado:.2f}')
+    elif continuar == '+': 
+        resultado = resultado+num3
+        print(f'= {resultado}')
+    elif continuar == '/':
+        resultado = resultado-num3
+        print(f'= {resultado}')
+    else:
+        print('Insira um operador válido')    
+else:
+    print('------')
 
